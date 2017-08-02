@@ -21,8 +21,8 @@ public class LoginPage extends JFrame {
 	 * @wbp.nonvisual location=631,-11
 	 */
 	private final JLabel label = new JLabel("New label");
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField txtUsername;
+	private JTextField txtPassword;
 
 	/**
 	 * Launch the application.
@@ -59,17 +59,29 @@ public class LoginPage extends JFrame {
 		lblPassword.setBounds(112, 100, 106, 24);
 		contentPane.add(lblPassword);
 		
-		textField = new JTextField();
-		textField.setBounds(301, 51, 134, 24);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtUsername = new JTextField();
+		txtUsername.setBounds(301, 51, 134, 24);
+		contentPane.add(txtUsername);
+		txtUsername.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(301, 100, 134, 24);
-		contentPane.add(textField_1);
+		txtPassword = new JTextField();
+		txtPassword.setColumns(10);
+		txtPassword.setBounds(301, 100, 134, 24);
+		contentPane.add(txtPassword);
 		
 		JButton btnLogin = new JButton("Login");
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				contentPane.setVisible(false);			
+				MainP Main = new MainP();
+				Main.setVisible(true);
+
+				//add the code here
+				
+				
+				
+			}
+		});
 		btnLogin.setBounds(212, 212, 89, 23);
 		contentPane.add(btnLogin);
 	}
