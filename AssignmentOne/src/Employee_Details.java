@@ -9,6 +9,8 @@ import javax.swing.JButton;
 import javax.swing.JTextArea;
 import java.awt.Color;
 import javax.swing.border.BevelBorder;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class Employee_Details extends JFrame {
@@ -75,16 +77,23 @@ public class Employee_Details extends JFrame {
 		contentPane.add(lblDepartment);
 		
 		JButton btnOk = new JButton("Ok");
+		btnOk.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {				
+			}
+		});
 		btnOk.setBounds(80, 391, 89, 23);
 		contentPane.add(btnOk);
 		
 		JButton btnNext = new JButton("Next");
+		btnNext.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				contentPane.setVisible(false);			
+				ContactUs Cus = new ContactUs();
+				Cus.setVisible(true);
+			}
+		});
 		btnNext.setBounds(283, 391, 89, 23);
 		contentPane.add(btnNext);
-		
-		JTextArea textArea = new JTextArea();
-		textArea.setBounds(249, 67, 157, 29);
-		contentPane.add(textArea);
 		
 		JTextArea textArea_1 = new JTextArea();
 		textArea_1.setBounds(249, 106, 157, 29);

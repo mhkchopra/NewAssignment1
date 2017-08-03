@@ -1,0 +1,5 @@
+				
+//To open page//
+
+ContactUs nw = New ContactUs();
+				nw.NewScreen();
