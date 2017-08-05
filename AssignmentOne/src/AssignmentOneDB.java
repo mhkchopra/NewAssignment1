@@ -8,12 +8,12 @@ public class AssignmentOneDB {
 		try
 		{
 		Class.forName("oracle.jdbc.driver.OracleDriver");
-		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:M2172548","system","omomnamo");
+		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:M2172458","system","omomnamo");
 		Statement st=con.createStatement();
-		String sql="select * from Salary_Slip";
+		String sql="select * from LOGIN_PAGE";
 		ResultSet rs=st.executeQuery(sql);
 		while(rs.next())
-			System.out.println(rs.getInt(1)+"   "+rs.getString(2));
+			System.out.println(rs.getString("Admin")+"   "+rs.getInt(1234));
 		con.close();
 		}
 		catch(Exception e)
