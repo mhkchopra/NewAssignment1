@@ -1,6 +1,8 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Image;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -23,6 +25,8 @@ public class LoginPage extends JFrame {
 	private final JLabel label = new JLabel("New label");
 	private JTextField txtUsername;
 	private JTextField txtPassword;
+	private JTextField textField;
+	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -47,29 +51,24 @@ public class LoginPage extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 707, 460);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(224, 255, 255));
+		contentPane.setForeground(new Color(175, 238, 238));
 		contentPane.setBorder(new EmptyBorder(2, 2, 2, 2));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblUsername = new JLabel("Username ");
-		lblUsername.setBounds(112, 51, 106, 24);
+		lblUsername.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblUsername.setBounds(41, 84, 106, 24);
 		contentPane.add(lblUsername);
 		
 		JLabel lblPassword = new JLabel("Password");
-		lblPassword.setBounds(112, 100, 106, 24);
+		lblPassword.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblPassword.setBounds(41, 138, 106, 24);
 		contentPane.add(lblPassword);
 		
-		txtUsername = new JTextField();
-		txtUsername.setBounds(301, 51, 134, 24);
-		contentPane.add(txtUsername);
-		txtUsername.setColumns(10);
-		
-		txtPassword = new JTextField();
-		txtPassword.setColumns(10);
-		txtPassword.setBounds(301, 100, 134, 24);
-		contentPane.add(txtPassword);
-		
 		JButton btnLogin = new JButton("Login");
+		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 16));
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				contentPane.setVisible(false);			
@@ -82,7 +81,29 @@ public class LoginPage extends JFrame {
 				
 			}
 		});
-		btnLogin.setBounds(212, 212, 89, 23);
+		btnLogin.setBounds(112, 210, 89, 23);
 		contentPane.add(btnLogin);
+		
+		textField = new JTextField();
+		textField.setBounds(189, 83, 125, 30);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setColumns(10);
+		textField_1.setBounds(189, 137, 125, 30);
+		contentPane.add(textField_1);
+		
+		JLabel lblNewLabel = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/ipayroll-logo-300x176.jpg")).getImage();
+		lblNewLabel.setIcon(new ImageIcon(img));
+		lblNewLabel.setBounds(334, 32, 314, 230);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		Image img1 = new ImageIcon(this.getClass().getResource("/Welcome-Picture-.jpg")).getImage();
+		lblNewLabel_1.setIcon(new ImageIcon(img1));
+		lblNewLabel_1.setBounds(10, 0, 681, 421);
+		contentPane.add(lblNewLabel_1);
 	}
 }
