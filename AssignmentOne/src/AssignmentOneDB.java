@@ -13,7 +13,7 @@ public class AssignmentOneDB {
 		String sql="select * from LOGIN_PAGE";
 		ResultSet rs=st.executeQuery(sql);
 		while(rs.next())
-			System.out.println(rs.getString("Admin")+"   "+rs.getInt(1234));
+			System.out.println(rs.getString("LBLUSERNAME")+"   "+rs.getInt("LBLPASSWORD"));
 		con.close();
 		}
 		catch(Exception e)
