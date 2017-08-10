@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="img"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="E:/Oracle 12c Release 1 {64}/database/stage/Components/oracle.dbjava.jdbc/12.1.0.2.0/1/DataFiles/filegroup1.jar"/>
-	<classpathentry kind="lib" path="E:/Oracle 12c Release 1 {64}/database/stage/Components/oracle.dbjava.jdbc/12.1.0.2.0/1/DataFiles/filegroup4.jar"/>
+	<classpathentry kind="lib" path="E:/Oracle 12c Release 1 {64}/jtds-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Study/Grad Diploma in IT/sqldeveloper/jdbc/lib/ojdbc6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

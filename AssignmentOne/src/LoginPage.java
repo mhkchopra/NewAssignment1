@@ -19,10 +19,6 @@ import java.awt.Font;
 public class LoginPage extends JFrame {
 
 	private JPanel contentPane;
-	/**
-	 * @wbp.nonvisual location=631,-11
-	 */
-	private final JLabel label = new JLabel("New label");
 	private JTextField txtUsername;
 	private JTextField txtPassword;
 	private JTextField textField;
@@ -59,12 +55,12 @@ public class LoginPage extends JFrame {
 		
 		JLabel lblUsername = new JLabel("Username ");
 		lblUsername.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblUsername.setBounds(41, 84, 106, 24);
+		lblUsername.setBounds(62, 84, 106, 24);
 		contentPane.add(lblUsername);
 		
 		JLabel lblPassword = new JLabel("Password");
 		lblPassword.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblPassword.setBounds(41, 138, 106, 24);
+		lblPassword.setBounds(62, 138, 106, 24);
 		contentPane.add(lblPassword);
 		
 		JButton btnLogin = new JButton("Login");
@@ -85,13 +81,13 @@ public class LoginPage extends JFrame {
 		contentPane.add(btnLogin);
 		
 		textField = new JTextField();
-		textField.setBounds(189, 83, 125, 30);
+		textField.setBounds(178, 83, 125, 30);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
-		textField_1.setBounds(189, 137, 125, 30);
+		textField_1.setBounds(178, 137, 125, 30);
 		contentPane.add(textField_1);
 		
 		JLabel lblNewLabel = new JLabel("");
@@ -103,7 +99,7 @@ public class LoginPage extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("");
 		Image img1 = new ImageIcon(this.getClass().getResource("/Welcome-Picture-.jpg")).getImage();
 		lblNewLabel_1.setIcon(new ImageIcon(img1));
-		lblNewLabel_1.setBounds(10, 0, 681, 421);
+		lblNewLabel_1.setBounds(0, 0, 691, 432);
 		contentPane.add(lblNewLabel_1);
 	}
 }
