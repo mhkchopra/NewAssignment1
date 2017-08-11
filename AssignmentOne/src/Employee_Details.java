@@ -1,9 +1,11 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Image;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
@@ -103,8 +105,8 @@ public class Employee_Details extends JFrame {
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				contentPane.setVisible(false);			
-				ContactUs Cus = new ContactUs();
-				Cus.setVisible(true);
+				ViewPaySlipp view = new ViewPaySlipp();
+				view.setVisible(true);
 			}
 		});
 		btnNext.setBounds(317, 391, 89, 29);
@@ -144,8 +146,13 @@ public class Employee_Details extends JFrame {
 		contentPane.add(textArea);
 		
 		JLabel lblNew = new JLabel("New ");
-		lblNew.setBounds(442, 64, 170, 290);
+		lblNew.setBounds(20, 11, 600, 419);
 		contentPane.add(lblNew);
+		Image img1 = new ImageIcon(this.getClass().getResource("/Employee2.jpg")).getImage();
+		lblNew.setIcon(new ImageIcon(img1));
+		lblNew.setBounds(20, 65, 600, 365);
+		contentPane.add(lblNew);
+
 		
 		
 	}

@@ -125,7 +125,7 @@ public class MainP extends JFrame {
 		JButton btnViewSalarySlip = new JButton("VIEW SALARY SLIP");
 		btnViewSalarySlip.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				ViewPaySlip pay = new ViewPaySlip();
+				ViewPaySlipp pay = new ViewPaySlipp();
 				pay.setVisible(true);
 			}
 		});
